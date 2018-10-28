@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C476033C217854F2002EAE1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476033B217854F2002EAE1A /* AppDelegate.swift */; };
+		C4760340217854F3002EAE1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C476033F217854F3002EAE1A /* Assets.xcassets */; };
+		C4760343217854F3002EAE1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4760341217854F3002EAE1A /* Main.storyboard */; };
+		C4FFEBDB21785BB0004DF634 /* SKRTMAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FFEBDA21785BB0004DF634 /* SKRTMAPI.framework */; };
+		C4FFEBDC21785D0C004DF634 /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C476034E217859E6002EAE1A /* SKCore.framework */; };
+		C4FFEBDD21785D0C004DF634 /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C476034F217859E6002EAE1A /* SKWebAPI.framework */; };
+		C4FFEBDE21785D0C004DF634 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C476034D217859E6002EAE1A /* Starscream.framework */; };
+		C4FFEBFD21787D83004DF634 /* StreamMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEBFB21787D83004DF634 /* StreamMessageViewController.swift */; };
+		C4FFEC0021787E1A004DF634 /* StreamMessageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FFEBFF21787E1A004DF634 /* StreamMessageView.storyboard */; };
+		C4FFEC04217882C8004DF634 /* MainContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC03217882C8004DF634 /* MainContentViewController.swift */; };
+		C4FFEC0621788E68004DF634 /* SlackRTMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC0521788E68004DF634 /* SlackRTMService.swift */; };
+		C4FFEC0821788F5F004DF634 /* SlackWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC0721788F5F004DF634 /* SlackWebSocket.swift */; };
+		C4FFEC0A217893C5004DF634 /* SlackUserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC09217893C5004DF634 /* SlackUserInfoService.swift */; };
+		C4FFEC0F21789490004DF634 /* SlackUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC0E21789490004DF634 /* SlackUserInfo.swift */; };
+		C4FFEC112178AA56004DF634 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FFEC102178AA56004DF634 /* Alamofire.framework */; };
+		C4FFEC132178BF1B004DF634 /* SlackNewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC122178BF1B004DF634 /* SlackNewMessage.swift */; };
+		C4FFEC15217B0D50004DF634 /* SlackUserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC14217B0D50004DF634 /* SlackUserDataStore.swift */; };
+		C4FFEC17217B100E004DF634 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC16217B100E004DF634 /* Definition.swift */; };
+		C4FFEC19217C5824004DF634 /* RegixUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC18217C5824004DF634 /* RegixUtil.swift */; };
+		C4FFEC1D21843E4A004DF634 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC1C21843E4A004DF634 /* CustomImageView.swift */; };
+		C4FFEC2221847E22004DF634 /* GoogleSlideWebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FFEC2121847E22004DF634 /* GoogleSlideWebView.storyboard */; };
+		C4FFEC2421847E54004DF634 /* GoogleSlideWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEC2321847E54004DF634 /* GoogleSlideWebViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C4760338217854F2002EAE1A /* SlideWithSKTL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideWithSKTL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C476033B217854F2002EAE1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C476033F217854F3002EAE1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4760342217854F3002EAE1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4760344217854F3002EAE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4760345217854F3002EAE1A /* SlideWithSKTL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlideWithSKTL.entitlements; sourceTree = "<group>"; };
+		C476034C217859E6002EAE1A /* SKRTMAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKRTMAPI.framework; path = Carthage/Build/Mac/SKRTMAPI.framework; sourceTree = "<group>"; };
+		C476034D217859E6002EAE1A /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/Mac/Starscream.framework; sourceTree = "<group>"; };
+		C476034E217859E6002EAE1A /* SKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKCore.framework; path = Carthage/Build/Mac/SKCore.framework; sourceTree = "<group>"; };
+		C476034F217859E6002EAE1A /* SKWebAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKWebAPI.framework; path = Carthage/Build/Mac/SKWebAPI.framework; sourceTree = "<group>"; };
+		C4FFEBDA21785BB0004DF634 /* SKRTMAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKRTMAPI.framework; path = Carthage/Build/tvOS/SKRTMAPI.framework; sourceTree = "<group>"; };
+		C4FFEBFB21787D83004DF634 /* StreamMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamMessageViewController.swift; sourceTree = "<group>"; };
+		C4FFEBFF21787E1A004DF634 /* StreamMessageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StreamMessageView.storyboard; sourceTree = "<group>"; };
+		C4FFEC03217882C8004DF634 /* MainContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentViewController.swift; sourceTree = "<group>"; };
+		C4FFEC0521788E68004DF634 /* SlackRTMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackRTMService.swift; sourceTree = "<group>"; };
+		C4FFEC0721788F5F004DF634 /* SlackWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackWebSocket.swift; sourceTree = "<group>"; };
+		C4FFEC09217893C5004DF634 /* SlackUserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackUserInfoService.swift; sourceTree = "<group>"; };
+		C4FFEC0E21789490004DF634 /* SlackUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackUserInfo.swift; sourceTree = "<group>"; };
+		C4FFEC102178AA56004DF634 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		C4FFEC122178BF1B004DF634 /* SlackNewMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackNewMessage.swift; sourceTree = "<group>"; };
+		C4FFEC14217B0D50004DF634 /* SlackUserDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackUserDataStore.swift; sourceTree = "<group>"; };
+		C4FFEC16217B100E004DF634 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
+		C4FFEC18217C5824004DF634 /* RegixUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegixUtil.swift; sourceTree = "<group>"; };
+		C4FFEC1C21843E4A004DF634 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		C4FFEC2121847E22004DF634 /* GoogleSlideWebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoogleSlideWebView.storyboard; sourceTree = "<group>"; };
+		C4FFEC2321847E54004DF634 /* GoogleSlideWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSlideWebViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4760335217854F2002EAE1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FFEC112178AA56004DF634 /* Alamofire.framework in Frameworks */,
+				C4FFEBDC21785D0C004DF634 /* SKCore.framework in Frameworks */,
+				C4FFEBDD21785D0C004DF634 /* SKWebAPI.framework in Frameworks */,
+				C4FFEBDE21785D0C004DF634 /* Starscream.framework in Frameworks */,
+				C4FFEBDB21785BB0004DF634 /* SKRTMAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C476032F217854F2002EAE1A = {
+			isa = PBXGroup;
+			children = (
+				C476033A217854F2002EAE1A /* SlideWithSKTL */,
+				C4760339217854F2002EAE1A /* Products */,
+				C476034B217859E5002EAE1A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4760339217854F2002EAE1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4760338217854F2002EAE1A /* SlideWithSKTL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C476033A217854F2002EAE1A /* SlideWithSKTL */ = {
+			isa = PBXGroup;
+			children = (
+				C4760345217854F3002EAE1A /* SlideWithSKTL.entitlements */,
+				C4760344217854F3002EAE1A /* Info.plist */,
+				C476033B217854F2002EAE1A /* AppDelegate.swift */,
+				C4FFEC0721788F5F004DF634 /* SlackWebSocket.swift */,
+				C4FFEC18217C5824004DF634 /* RegixUtil.swift */,
+				C4FFEC16217B100E004DF634 /* Definition.swift */,
+				C4FFEC14217B0D50004DF634 /* SlackUserDataStore.swift */,
+				C476033F217854F3002EAE1A /* Assets.xcassets */,
+				C4FFEC0D2178947D004DF634 /* Model */,
+				C4FFEC0B2178944E004DF634 /* Service */,
+				C4FFEC0C21789466004DF634 /* View */,
+			);
+			path = SlideWithSKTL;
+			sourceTree = "<group>";
+		};
+		C476034B217859E5002EAE1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFEC102178AA56004DF634 /* Alamofire.framework */,
+				C4FFEBDA21785BB0004DF634 /* SKRTMAPI.framework */,
+				C476034E217859E6002EAE1A /* SKCore.framework */,
+				C476034C217859E6002EAE1A /* SKRTMAPI.framework */,
+				C476034F217859E6002EAE1A /* SKWebAPI.framework */,
+				C476034D217859E6002EAE1A /* Starscream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4FFEC0B2178944E004DF634 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFEC0521788E68004DF634 /* SlackRTMService.swift */,
+				C4FFEC09217893C5004DF634 /* SlackUserInfoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C4FFEC0C21789466004DF634 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFEC1F21847DEE004DF634 /* GoogleSlideWeb */,
+				C4FFEC1E21844AFB004DF634 /* Main */,
+				C4FFEC1B21843E2E004DF634 /* Common */,
+				C4FFEC1A21843E04004DF634 /* StreamMessage */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4FFEC0D2178947D004DF634 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFEC0E21789490004DF634 /* SlackUserInfo.swift */,
+				C4FFEC122178BF1B004DF634 /* SlackNewMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4FFEC1A21843E04004DF634 /* StreamMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFEBFF21787E1A004DF634 /* StreamMessageView.storyboard */,
+				C4FFEBFB21787D83004DF634 /* StreamMessageViewController.swift */,
+			);
+			path = StreamMessage;
+			sourceTree = "<group>";
+		};
+		C4FFEC1B21843E2E004DF634 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFEC1C21843E4A004DF634 /* CustomImageView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C4FFEC1E21844AFB004DF634 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C4760341217854F3002EAE1A /* Main.storyboard */,
+				C4FFEC03217882C8004DF634 /* MainContentViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C4FFEC1F21847DEE004DF634 /* GoogleSlideWeb */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFEC2121847E22004DF634 /* GoogleSlideWebView.storyboard */,
+				C4FFEC2321847E54004DF634 /* GoogleSlideWebViewController.swift */,
+			);
+			path = GoogleSlideWeb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4760337217854F2002EAE1A /* SlideWithSKTL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4760348217854F3002EAE1A /* Build configuration list for PBXNativeTarget "SlideWithSKTL" */;
+			buildPhases = (
+				C4760334217854F2002EAE1A /* Sources */,
+				C4760335217854F2002EAE1A /* Frameworks */,
+				C4760336217854F2002EAE1A /* Resources */,
+				C4760354217859F4002EAE1A /* Run Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideWithSKTL;
+			productName = RTM;
+			productReference = C4760338217854F2002EAE1A /* SlideWithSKTL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4760330217854F2002EAE1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Tagayasu;
+				TargetAttributes = {
+					C4760337217854F2002EAE1A = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C4760333217854F2002EAE1A /* Build configuration list for PBXProject "SlideWithSKTL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C476032F217854F2002EAE1A;
+			productRefGroup = C4760339217854F2002EAE1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4760337217854F2002EAE1A /* SlideWithSKTL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4760336217854F2002EAE1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FFEC0021787E1A004DF634 /* StreamMessageView.storyboard in Resources */,
+				C4760340217854F3002EAE1A /* Assets.xcassets in Resources */,
+				C4760343217854F3002EAE1A /* Main.storyboard in Resources */,
+				C4FFEC2221847E22004DF634 /* GoogleSlideWebView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4760354217859F4002EAE1A /* Run Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/SKRTMAPI.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/SKCore.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/SKWebAPI.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Starscream.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+			);
+			name = "Run Carthage";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4760334217854F2002EAE1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FFEBFD21787D83004DF634 /* StreamMessageViewController.swift in Sources */,
+				C4FFEC17217B100E004DF634 /* Definition.swift in Sources */,
+				C4FFEC0621788E68004DF634 /* SlackRTMService.swift in Sources */,
+				C4FFEC19217C5824004DF634 /* RegixUtil.swift in Sources */,
+				C4FFEC04217882C8004DF634 /* MainContentViewController.swift in Sources */,
+				C4FFEC132178BF1B004DF634 /* SlackNewMessage.swift in Sources */,
+				C4FFEC15217B0D50004DF634 /* SlackUserDataStore.swift in Sources */,
+				C4FFEC0821788F5F004DF634 /* SlackWebSocket.swift in Sources */,
+				C476033C217854F2002EAE1A /* AppDelegate.swift in Sources */,
+				C4FFEC2421847E54004DF634 /* GoogleSlideWebViewController.swift in Sources */,
+				C4FFEC0A217893C5004DF634 /* SlackUserInfoService.swift in Sources */,
+				C4FFEC0F21789490004DF634 /* SlackUserInfo.swift in Sources */,
+				C4FFEC1D21843E4A004DF634 /* CustomImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4760341217854F3002EAE1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4760342217854F3002EAE1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4760346217854F3002EAE1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4760347217854F3002EAE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C4760349217854F3002EAE1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SlideWithSKTL/SlideWithSKTL.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4QQHRA372Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = SlideWithSKTL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tagayasu.SlideWithSKTL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		C476034A217854F3002EAE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SlideWithSKTL/SlideWithSKTL.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4QQHRA372Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = SlideWithSKTL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tagayasu.SlideWithSKTL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4760333217854F2002EAE1A /* Build configuration list for PBXProject "SlideWithSKTL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4760346217854F3002EAE1A /* Debug */,
+				C4760347217854F3002EAE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4760348217854F3002EAE1A /* Build configuration list for PBXNativeTarget "SlideWithSKTL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4760349217854F3002EAE1A /* Debug */,
+				C476034A217854F3002EAE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4760330217854F2002EAE1A /* Project object */;
+}

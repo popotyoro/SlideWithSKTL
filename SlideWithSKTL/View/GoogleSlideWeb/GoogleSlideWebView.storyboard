@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Vn4-SB-TnI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Google Slide Web View Controller-->
+        <scene sceneID="UN9-AO-Tso">
+            <objects>
+                <viewController id="Vn4-SB-TnI" customClass="GoogleSlideWebViewController" customModule="RTM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="TmT-ZO-5LY">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PVB-GK-xWN">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PVB-GK-xWN" firstAttribute="leading" secondItem="TmT-ZO-5LY" secondAttribute="leading" id="U30-aQ-JQZ"/>
+                            <constraint firstItem="PVB-GK-xWN" firstAttribute="top" secondItem="TmT-ZO-5LY" secondAttribute="top" id="hv3-aJ-YiB"/>
+                            <constraint firstAttribute="bottom" secondItem="PVB-GK-xWN" secondAttribute="bottom" id="mFw-wW-kzo"/>
+                            <constraint firstAttribute="trailing" secondItem="PVB-GK-xWN" secondAttribute="trailing" id="w0y-Cu-e3e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="PVB-GK-xWN" id="Bek-cD-uqD"/>
+                    </connections>
+                </viewController>
+                <customObject id="vZH-dj-Asp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

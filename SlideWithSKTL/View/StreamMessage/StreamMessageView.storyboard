@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="dOF-K8-GOo">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stream Message View Controller-->
+        <scene sceneID="etK-we-sbW">
+            <objects>
+                <viewController id="dOF-K8-GOo" customClass="StreamMessageViewController" customModule="SlideWithSKTL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="lH9-BZ-Uya">
+                        <rect key="frame" x="0.0" y="0.0" width="573" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s2u-ua-ygz" customClass="CustomImageView" customModule="SlideWithSKTL" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Awa-9k-1wS"/>
+                                    <constraint firstAttribute="height" constant="80" id="ukS-fI-BJ7"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="sp_icon" id="5Pc-6H-SYQ"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Evx-t7-vhw">
+                                <rect key="frame" x="96" y="63" width="469" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="9Sq-fx-MBo"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="スマホ廃人" drawsBackground="YES" id="fkN-Ff-9pk">
+                                    <font key="font" metaFont="systemBold" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="lCw-RG-nnC">
+                                <rect key="frame" x="94" y="8" width="473" height="52"/>
+                                <textFieldCell key="cell" selectable="YES" title="Message Text" id="0HV-sj-kwW">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Evx-t7-vhw" firstAttribute="leading" secondItem="s2u-ua-ygz" secondAttribute="trailing" constant="8" id="2FM-UJ-jLq"/>
+                            <constraint firstItem="s2u-ua-ygz" firstAttribute="top" secondItem="lH9-BZ-Uya" secondAttribute="top" constant="8" id="65f-oz-Szz"/>
+                            <constraint firstAttribute="bottom" secondItem="s2u-ua-ygz" secondAttribute="bottom" constant="8" id="DrT-lM-A2m"/>
+                            <constraint firstItem="lCw-RG-nnC" firstAttribute="top" secondItem="Evx-t7-vhw" secondAttribute="bottom" constant="3" id="PQL-QQ-ZOT"/>
+                            <constraint firstAttribute="trailing" secondItem="Evx-t7-vhw" secondAttribute="trailing" constant="8" id="aiw-be-aRQ"/>
+                            <constraint firstItem="lCw-RG-nnC" firstAttribute="leading" secondItem="Evx-t7-vhw" secondAttribute="leading" id="f6X-UV-b4e"/>
+                            <constraint firstItem="lCw-RG-nnC" firstAttribute="bottom" secondItem="s2u-ua-ygz" secondAttribute="bottom" id="kqo-YH-vHW"/>
+                            <constraint firstAttribute="trailing" secondItem="lCw-RG-nnC" secondAttribute="trailing" constant="8" id="nZx-SC-dCR"/>
+                            <constraint firstItem="s2u-ua-ygz" firstAttribute="leading" secondItem="lH9-BZ-Uya" secondAttribute="leading" constant="8" id="sbb-ob-vBO"/>
+                            <constraint firstItem="Evx-t7-vhw" firstAttribute="top" secondItem="s2u-ua-ygz" secondAttribute="top" id="z45-vD-7UK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="iconImageView" destination="s2u-ua-ygz" id="dye-2d-OmS"/>
+                        <outlet property="messageTextField" destination="lCw-RG-nnC" id="hvk-Ih-6Hb"/>
+                        <outlet property="userNameTextField" destination="Evx-t7-vhw" id="j4c-6v-Zyp"/>
+                    </connections>
+                </viewController>
+                <customObject id="JVG-aw-IwW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404.5" y="-79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sp_icon" width="723" height="779"/>
+    </resources>
+</document>
